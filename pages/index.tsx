@@ -1,5 +1,5 @@
 import Image from "next/image";
-import VerticalCarousel from "@/components/VerticalCarousel";
+import Carousel from "@/components/Carousel";
 
 import { photosLeft, photosRight } from "@/data/photos";
 
@@ -45,11 +45,19 @@ export default function Home() {
                     {/* TODO: Adapt this to be responsive on mobile
                      * Possibility of using an alternative.. horizontal carousel? */}
                     <div className="min-h-full w-1/3 ml-auto invisible lg:visible flex">
-                        <div className="w-1/2 flex-1 mx-4">
-                            <VerticalCarousel photos={photosLeft} rtl={false} />;
+                        <div className="w-1/2 flex-1 mx-4 carousel-vertical-left">
+                            <Carousel
+                                photos={photosLeft}
+                                rtl={false}
+                                vertical={true}
+                            />
                         </div>
-                        <div className="w-1/2 flex-1 mx-4">
-                            <VerticalCarousel photos={photosRight} rtl={true} />;
+                        <div className="w-1/2 flex-1 mx-4 carousel-vertical-right">
+                            <Carousel
+                                photos={photosRight}
+                                rtl={true}
+                                vertical={true}
+                            />
                         </div>
                     </div>
                 </div>

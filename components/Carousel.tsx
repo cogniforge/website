@@ -8,12 +8,14 @@ interface Item {
     imageUrl: string;
 }
 
-export default function VerticalCarousel({
+export default function Carousel({
     photos,
     rtl,
+    vertical,
 }: {
     photos: Item[];
     rtl: boolean;
+    vertical: boolean;
 }) {
     const settings = {
         arrows: false,
@@ -25,7 +27,7 @@ export default function VerticalCarousel({
         cssEase: "linear",
         slidesToShow: 2,
         slidesToScroll: 1,
-        vertical: true,
+        vertical: vertical,
         verticalSwiping: true,
         pauseOnHover: false,
         rtl: rtl,

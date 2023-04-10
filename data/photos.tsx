@@ -6,23 +6,23 @@ export const photosLeft = [
     },
     {
         id: 2,
-        imageUrl: "/manga.webp",
+        imageUrl: "/music.jpeg",
         description: "I want to drop some sick beats",
     },
     {
         id: 3,
-        imageUrl: "/manga.webp",
+        imageUrl: "/manga.jpeg",
         description: "I want to start a manga series",
     },
     {
         id: 4,
-        imageUrl: "/manga.webp",
-        description: "I want to make a movie",
+        imageUrl: "/travel.jpeg",
+        description: "I want to learn a new language",
     },
     {
         id: 5,
-        imageUrl: "/manga.webp",
-        description: "I want to learn a new language",
+        imageUrl: "/movie.jpeg",
+        description: "I want to make a movie",
     },
 ];
 
