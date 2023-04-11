@@ -29,27 +29,27 @@ export const photosLeft = [
 export const photosRight = [
     {
         id: 1,
-        imageUrl: "/manga.webp",
+        imageUrl: "/business.jpeg",
         description: "I want to start my own business",
     },
     {
         id: 2,
-        imageUrl: "/manga.webp",
+        imageUrl: "/novel.jpeg",
         description: "I want to write a graphic novel",
     },
     {
         id: 3,
-        imageUrl: "/manga.webp",
+        imageUrl: "/photos.jpeg",
         description: "I want to take photos",
     },
     {
         id: 4,
-        imageUrl: "/manga.webp",
+        imageUrl: "/youtube.jpeg",
         description: "I want to start a YouTube",
     },
     {
         id: 5,
-        imageUrl: "/manga.webp",
+        imageUrl: "/app.jpeg",
         description: "I want to make an app",
     },
 ];
