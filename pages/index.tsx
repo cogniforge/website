@@ -1,30 +1,32 @@
 import Image from "next/image";
+import Carousel from "@/components/Carousel";
 
-const Header = () => {
+import { photosLeft, photosRight } from "@/data/photos";
+
+const Logo = () => {
     return (
-        <header className="flex justify-between items-center mt-12 py-6 md:py-12">
+        <div className="flex justify-between items-center mt-12 py-6 md:py-12">
             <div className="flex items-center">
                 <Image
-                    className="mr-4"
+                    className="mr-4 dark:filter dark:invert"
                     src="/logo.svg"
                     alt="Logo"
-                    width={40}
-                    height={40}
+                    width={60}
+                    height={60}
                 />
-                <h1 className="text-2xl md:text-3xl lg:text-4xl">cogniforge</h1>
+                <h1 className="text-3xl md:text-4xl">cogniforge</h1>
             </div>
-        </header>
+        </div>
     );
 };
 
 export default function Home() {
     return (
-        <div className="flex flex-col min-h-screen max-w-7xl mx-auto px-8 sm:px-10 lg:px-12">
-            <Header />
-            
-            <main className="flex-1 flex flex-col justify-center">
+        <div className="flex flex-col min-h-screen max-w-fit mx-36 px-6 sm:px-8 lg:px-10">
+            <main className="flex-grow flex flex-col justify-center">
                 <div className="flex flex-col md:flex-row md:items-center">
-                    <div className="md:w-3/4 md:pr-12">
+                    <div className="md:w-1/2 md:mr-10">
+                        <Logo />
                         <h1 className="lg:text-6xl md:text-5xl text-3xl font-bold mb-10">
                             Learning for all through collaborative projects and
                             peer-to-peer collaboration.
@@ -40,8 +42,23 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="md:w-1/4 md:ml-auto">
-                        {/* TODO: Implement image carousell */}
+                    {/* TODO: Adapt this to be responsive on mobile
+                     * Possibility of using an alternative.. horizontal carousel? */}
+                    <div className="min-h-full w-1/3 ml-auto invisible xl:visible flex">
+                        <div className="w-1/2 flex-1 mx-4 carousel-vertical-left">
+                            <Carousel
+                                photos={photosLeft}
+                                rtl={false}
+                                vertical={true}
+                            />
+                        </div>
+                        <div className="w-1/2 flex-1 mx-4 carousel-vertical-right">
+                            <Carousel
+                                photos={photosRight}
+                                rtl={true}
+                                vertical={true}
+                            />
+                        </div>
                     </div>
                 </div>
             </main>
