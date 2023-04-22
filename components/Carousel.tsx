@@ -46,7 +46,7 @@ export default function Carousel({
                             alt={item.description}
                             width={300}
                             height={300}
-                            className="rounded-3xl opacity-75 hover:opacity-100"
+                            className="rounded-3xl dark:opacity-75 dark:hover:opacity-100"
                         />
                         <div className="absolute bottom-0 left-0 right-0 m-4 p-2 rounded-xl bg-black bg-opacity-80 text-white text-center backdrop-blur-md">
                             <p className="text-sm">{item.description}</p>
