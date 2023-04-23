@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
+import Link from 'next/link';
 
 import { photosLeft, photosRight } from "@/data/photos";
 
@@ -33,12 +34,14 @@ export default function Home() {
                         </h1>
                         <div className="flex flex-col md:flex-row">
                             {/* TODO: Add actual links to other pages */}
-                            <button className="bg-purple-500 text-white font-bold py-2 px-4 rounded md:mr-4 mb-4 md:mb-0">
-                                Get Started
+                            <button className="bg-gray-500 text-white font-bold py-2 px-4 rounded md:mr-4 mb-4 md:mb-0">
+                                Coming Soon...
                             </button>
-                            <button className="bg-white text-purple-500 font-bold py-2 px-4 rounded border border-purple-500">
-                                Learn More
-                            </button>
+                            <Link href="https://bank.hackclub.com/donations/start/cogniforge" passHref={true}>
+                                <button className="bg-white text-purple-500 font-bold py-2 px-4 rounded border border-purple-500">
+                                Support Us
+                                </button>
+                            </Link>
                         </div>
                     </div>
 
