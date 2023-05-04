@@ -5,7 +5,7 @@ import Image from "next/image";
 interface Item {
 	id: number;
 	description: string;
-	imageUrl: string;
+	imageTag: string;
 }
 
 export default function Carousel({
@@ -42,7 +42,7 @@ export default function Carousel({
 						className="my-4 justify-center flex flex-col items-center border-2 border-gray-300 rounded-3xl relative"
 					>
 						<Image
-							src={item.imageUrl}
+							src={"/carousel/" + item.imageTag}
 							alt={item.description}
 							width={300}
 							height={300}

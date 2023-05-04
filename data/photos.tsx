@@ -1,27 +1,27 @@
 export const photosLeft = [
 	{
 		id: 1,
-		imageUrl: "/vr.jpeg",
+		imageTag: "vr.jpeg",
 		description: "I want to build my own VR game",
 	},
 	{
 		id: 2,
-		imageUrl: "/music.jpeg",
+		imageTag: "music.jpeg",
 		description: "I want to drop some sick beats",
 	},
 	{
 		id: 3,
-		imageUrl: "/manga.jpeg",
+		imageTag: "manga.jpeg",
 		description: "I want to start a manga series",
 	},
 	{
 		id: 4,
-		imageUrl: "/travel.jpeg",
+		imageTag: "travel.jpeg",
 		description: "I want to learn a new language",
 	},
 	{
 		id: 5,
-		imageUrl: "/movie.jpeg",
+		imageTag: "movie.jpeg",
 		description: "I want to make a movie",
 	},
 ];
@@ -29,27 +29,27 @@ export const photosLeft = [
 export const photosRight = [
 	{
 		id: 1,
-		imageUrl: "/business.jpeg",
+		imageTag: "business.jpeg",
 		description: "I want to start my own business",
 	},
 	{
 		id: 2,
-		imageUrl: "/novel.jpeg",
+		imageTag: "novel.jpeg",
 		description: "I want to write a graphic novel",
 	},
 	{
 		id: 3,
-		imageUrl: "/photos.jpeg",
+		imageTag: "photos.jpeg",
 		description: "I want to take photos",
 	},
 	{
 		id: 4,
-		imageUrl: "/youtube.jpeg",
+		imageTag: "youtube.jpeg",
 		description: "I want to start a YouTube",
 	},
 	{
 		id: 5,
-		imageUrl: "/app.jpeg",
+		imageTag: "app.jpeg",
 		description: "I want to make an app",
 	},
 ];
