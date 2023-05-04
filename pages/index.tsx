@@ -4,9 +4,11 @@ import { photosLeft, photosRight } from "@/data/photos";
 
 import Carousel from "@/components/Carousel";
 import Logo from "@/components/Logo";
+import Layout from '@/components/Layout';
 
 export default function Home() {
     return (
+    <Layout title="Home">
         <div className="flex flex-col min-h-screen max-w-fit mx-36 px-6 sm:px-8 lg:px-10">
             <main className="flex-grow flex flex-col justify-center">
                 <div className="flex flex-col md:flex-row md:items-center">
@@ -50,5 +52,6 @@ export default function Home() {
                 </div>
             </main>
         </div>
+    </Layout>
     );
 }
